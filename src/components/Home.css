@@ -1,34 +1,38 @@
-/* Home.css */
-
 #home {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* light gray background */
+  height: 50vh;
   text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
 }
 
-#home h1 {
+.home-content h1 {
   font-size: 3rem;
-  margin-bottom: 15px;
-  color: #333;
+  margin-bottom: 1rem;
 }
 
-#home p {
+.home-content .highlight {
+  color: #ffdd57;
+}
+
+.home-content .subtitle {
   font-size: 1.5rem;
-  color: #666;
+  margin-bottom: 2rem;
 }
 
-/* Optional: responsive text */
-@media (max-width: 768px) {
-  #home h1 {
-    font-size: 2.2rem;
-  }
+.home-content .btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffdd57;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
 
-  #home p {
-    font-size: 1.2rem;
-  }
+.home-content .btn:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
 }
