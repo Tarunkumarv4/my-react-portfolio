@@ -1,0 +1,52 @@
+/* Navbar.css */
+
+/* Overall navbar styling */
+nav {
+  top: 0;
+  background-color: #000000; /* black background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Portfolio name/logo */
+nav div:first-child {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff; /* white text */
+}
+
+/* Navigation links */
+nav div:last-child a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff; /* white links */
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+nav div:last-child a:hover {
+  color: #007bff; /* blue on hover */
+  transform: scale(1.1);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  nav div:last-child {
+    margin-top: 10px;
+  }
+
+  nav div:last-child a {
+    margin: 5px;
+  }
+}
